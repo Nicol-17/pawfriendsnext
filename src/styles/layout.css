@@ -1,0 +1,27 @@
+.main-wrapper {
+    width: min(calc(100% - 1rem), max(1024px));
+    margin-inline: auto;
+}
+
+.section-full {
+    min-height: 100dvh;
+}
+
+.section-haft {
+    min-height: 50dvh;
+}
+
+.section-middle {
+    min-height: 80dvh;
+}
+
+.header-top-spacing {
+    padding-block-start: calc(var(--app-nav-height) + 10px);
+    position: relative;
+}
+
+.full-column {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    
+}
