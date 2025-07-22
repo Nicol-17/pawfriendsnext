@@ -1,0 +1,17 @@
+{
+    "title" : "ACCESO",   
+    "fields" : {
+        "email" : {
+            "label" : "E-Mail",
+            "placeholder" : "Introduzca su dirección de correo electrónico"
+        },
+        "password" : {
+            "label" : "contraseña",
+            "placeholder" : "Ingrese su contraseña"
+        }
+    },
+     "button" : "ACCESO",
+    "forgotPassword" : "¿Aún no tienes una cuenta?",
+    "signup" : "Inscribirse",
+    "buttonNav" : "Ir a casa"
+}

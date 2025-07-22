@@ -1,0 +1,17 @@
+{
+    "title" : "LOG IN",   
+    "fields" : {
+        "email" : {
+            "label" : "E-Mail",
+            "placeholder" : "Enter your email address"
+        },
+        "password" : {
+            "label" : "password",
+            "placeholder" : "Enter your password"
+        }
+    },
+     "button" : "LOG IN",
+    "forgotPassword" : "Don't have an account yet?",
+    "signup" : "Sign up",
+    "buttonNav" : "Go to home"
+}

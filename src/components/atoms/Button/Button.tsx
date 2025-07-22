@@ -50,7 +50,7 @@ const Button = ({
       <button
         type={type}
         onClick={onClick}
-        className={`custom-button ${className}`}
+        className={`${baseClasses} ${className}`}
       >
         {children}
       </button>

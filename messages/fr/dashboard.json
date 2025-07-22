@@ -1,0 +1,40 @@
+{
+    "title" : "Profil",
+    "buttonEdit" : "MODIFIER LE PROFIL",
+    "buttonChat" : "CHAT",
+    "titleForm" : "AJOUTER UN NOUVEL ANIMAL DE COMPAGNIE",
+    "fields" : {
+        "name" : {
+            "label" : "Nom du chien",
+            "placeholder" : "Entrez le nom de votre chien"
+        },
+         "Age" : {
+            "label" : "Âge",
+            "placeholder" : "Entrez votre âge"
+        },
+         "Species": {
+            "label": "Espèces",
+            "options": {
+                "dog": "chien",
+                "cat": "chat",
+                "bird": "oiseau",
+                "fish": "poisson"
+            }
+        },
+         "Gender": {
+            "label": "Genre",
+            "options": {
+                "male": "Mâle",
+                "female": "Femelle"
+            }
+        },
+         "Condition" : {
+            "label" : "Maladie ou état actuel",
+            "placeholder" : "Entrez votre condition"
+        }
+        
+    },
+    "buttonForm" : "Ajouter un animal de compagnie",
+    "buttonNavDashboard" : "se déconnecter"
+
+}

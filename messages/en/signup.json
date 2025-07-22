@@ -1,0 +1,41 @@
+{
+    "title": "SIGN UP",
+    "buttonNav": "Go to Login",
+    "buttonForm": "Sign Up",
+    "fields": {
+        "name": {
+            "label": "FullName",
+            "placeholder": "Enter your full name"
+        },
+        "email": {
+            "label": "E-Mail",
+            "placeholder": "Enter your email address"
+        },
+        "phone": {
+            "label": "Phone",
+            "placeholder": "Enter your Phone Number"
+        },
+        "birthdate": {
+            "label": "birthdate",
+            "placeholder": "Enter your birthdate"
+        },
+        "country": {
+            "label": "Country",
+            "options": {
+                "AR": "Argentina",
+                "FR": "France",
+                "CO": "Colombia",
+                "DE": "Germany"
+            }
+        },
+        "password": {
+            "label": "password",
+            "placeholder": "Enter your password"
+        }
+    },
+    "alert" : {
+        "title": "User successfully registered",
+        "button": "OK",
+        "message": "Your account has been successfully created"
+    }
+}

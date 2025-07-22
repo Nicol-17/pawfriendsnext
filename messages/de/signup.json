@@ -1,0 +1,41 @@
+{
+    "title": "MELDEN SIE SICH AN",
+    "buttonNav": "Zum Login",
+    "buttonForm": "Melden Sie sich an",
+    "fields": {
+        "name": {
+            "label": "Vollständiger Name",
+            "placeholder": "Geben Sie Ihren vollständigen Namen ein"
+        },
+        "email": {
+            "label": "E-Mail",
+            "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+        },
+        "phone": {
+            "label": "Telefon",
+            "placeholder": "Geben Sie Ihre Telefonnummer ein"
+        },
+        "birthdate": {
+            "label": "Geburtsdatum",
+            "placeholder": "Geben Sie Ihr Geburtsdatum ein"
+        },
+        "country": {
+            "label": "Land",
+            "options": {
+                "AR": "Argentinien",
+                "FR": "Frankreich",
+                "CO": "Kolumbien",
+                "DE": "Deutschland"
+            }
+        },
+        "password": {
+            "label": "Passwort",
+            "placeholder": "Geben Sie Ihr Passwort ein"
+        }
+    },
+    "alert" : {
+        "title": "Benutzer erfolgreich registriert",
+        "button": "OK",
+        "message": "Ihr Konto wurde erfolgreich erstellt"
+    }
+}

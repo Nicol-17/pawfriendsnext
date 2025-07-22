@@ -1,0 +1,66 @@
+{
+    "nav": {
+        "testimonials": "REFRENZEN",
+        "food": "ESSEN",
+        "contact": "KONTAKT",
+        "login": "EINLOGGEN"
+    },
+    "hero": {
+        "titleLine1": "EINE GEMEINSCHAFT FÜR",
+        "titleLine2": "HAUSBESITZER",
+        "titleLine3": "KRANKE WELPEN",
+        "paragraph1": "EIN WELPE IST NICHT ALLEIN,",
+        "paragraph2": "UND DU AUCH NICHT",
+        "signup": "MELDEN SIE SICH AN"
+    },
+    "us": {
+        "title": "ÜBER UNS",
+        "paragraph1": "Wir bei PawFriends glauben, dass jeder Hund eine Gemeinschaft verdient, die ihn unterstützt, und dass jeder Mensch einen Ort braucht, an dem er die Liebe zu seinem pelzigen Freund teilen kann.",
+        "paragraph2": "Dieses soziale Netzwerk entstand mit der Idee, Hundebesitzer aus aller Welt zu vernetzen, damit sie Erfahrungen, Ratschläge und glückliche Momente austauschen und sich in schwierigen Zeiten gegenseitig unterstützen können."
+    },
+    "testimonials": {
+        "title": "REFERENZEN",
+        "comment1": "Diese App ist unglaublich!",
+        "comment2": "Diese App ist unglaublich!",
+        "comment3": "Diese App ist unglaublich!"
+    },
+
+    
+    "food": {
+        "title": "US-FUSSZEILE",
+        "RoyalCanin": {
+            "name": "Royal Canin Feline Hydrolysiert 3,5 kg",
+            "price": 53.93,
+            "priceMessage" : "{{price, currency}}"
+        },
+        "Proplan": {
+            "name": "Proplan Kalorienreduziertes Futter für kleine Rassen, 3 kg",
+            "price": 28.90,
+            "priceMessage" : "{{price, currency}}"
+        },
+        "NutraNuggets": {
+            "name": "Nutra Nuggets Maintenance für Katzen",
+            "price": 33.39,
+            "priceMessage" : "{{price, currency}}"
+        }
+        
+    },
+    "contact": {
+        "title": "KONTAKT",
+        "button": "Nachricht senden",
+        "fields": {
+            "name": {
+                "label": "Name",
+                "placeholder": "Geben Sie Ihren Namen ein"
+            },
+            "email": {
+                "label": "E-Mail",
+                "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+            },
+            "message": {
+                "label": "Nachricht",
+                "placeholder": "Geben Sie Ihre Nachricht ein..."
+            }
+        }
+    }
+}

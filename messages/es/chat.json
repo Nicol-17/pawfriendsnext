@@ -1,0 +1,15 @@
+{
+    "placeholder": "Escribe mensaje...",
+    "send": "ENVIAR",
+    "botMessages": [
+        "¡Hola, qué tal! 🐶",
+        "¿Qué tipo de animal tienes?",
+        "¿Cuándo notaste los primeros síntomas? 🐾",
+        "¿Le has hecho análisis de sangre, ecografías o radiografías?",
+        "¿Le ha funcionado algún tratamiento natural o alternativo?",
+        "¿Qué cuidados especiales le das en casa?",
+        "¿Cómo manejas la ansiedad o el dolor de tu mascota?",
+        "¿Me recomiendas un veterinario? ¿Cómo fue tu experiencia?",
+        "¿Cómo te preparas emocionalmente para la despedida?"
+    ]
+}

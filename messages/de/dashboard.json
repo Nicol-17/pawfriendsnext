@@ -1,0 +1,40 @@
+{
+    "title" : "Profil",
+    "buttonEdit" : "PROFIL BEARBEITEN",
+    "buttonChat" : "CHAT",
+    "titleForm" : "EIN NEUES HAUSTIER HINZUFÜGEN",
+    "fields" : {
+        "name" : {
+            "label" : "Hundename",
+            "placeholder" : "Geben Sie den Namen Ihres Hundes ein"
+        },
+         "Age" : {
+            "label" : "Alter",
+            "placeholder" : "Geben Sie Ihr Alter ein"
+        },
+         "Species": {
+            "label": "Spezies",
+            "options": {
+                "dog": "Hund",
+                "cat": "Katze",
+                "bird": "Vogel",
+                "fish": "Fisch"
+            }
+        },
+         "Gender": {
+            "label": "Geschlecht",
+            "options": {
+                "male": "Männlich",
+                "female": "Weiblich"
+            }
+        },
+         "Condition" : {
+            "label" : "Aktuelle Krankheit oder Zustand",
+            "placeholder" : "Geben Sie Ihren Zustand ein"
+        }
+        
+    },
+    "buttonForm" : "Haustier hinzufügen",
+    "buttonNavDashboard" : "Ausloggen"
+
+}

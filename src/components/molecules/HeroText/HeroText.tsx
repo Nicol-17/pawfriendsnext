@@ -1,14 +1,16 @@
 import Button from "../../atoms/Button/Button";
-
 import Image from "next/image";
 
-import { useTranslation } from "react-i18next";
+
+
+import { useTranslations } from "next-intl";
+import "./HeroText.css"; 
 
 function HeroText() {
-    const { t } = useTranslation(["home"]);
+    const  t  = useTranslations("home");
 
     return (
-        <section className="h-full grid place-content-center place-items-stretch">
+        <section className="hero-section">
 
             <Image
                 src="/images/Rama-secondary.png"
@@ -27,16 +29,18 @@ function HeroText() {
 
             <div className="hero-main-content">
                 <Image
-                    src="/images/modelDog.png"
-                    width={500}
-                    height={500}
-                    className="[grid-column:1/-1] [grid-row:1/-1]"
+                    src="/images/modelDogs.png"
+                    width={530}
+                    height={550}
+                    className="Dog"
                     alt="Dog"
                 />
 
-                <div className="main-wrapper col-span-full row-span-full">
-                    <div className="text-primary w-fit mt-[100px] ml-auto"> 
-                        <h1 className="grid text-left text-[2.5rem] text-principle text-chewy">
+
+
+                <div className="main-wrapper full-column">
+                    <div className="text-primary "> 
+                        <h1 className="grid text-left text-[2.5rem] text-principle text-chewy  ">
                             <span>{t('hero.titleLine1')}</span>
                             <span className="flex gap-[2ch] items-center ms-[2ch]">
                                 {t('hero.titleLine2')} <small className="text-[1.5rem]"> {t('hero.titleLine3')}</small>
@@ -50,9 +54,11 @@ function HeroText() {
 
                         <p className="paragraph-secondary"> {t('hero.paragraph2')}</p>
 
-                        <Button type="link" destiny="/signup" className="Nav-links">
+                        <Button type="link" destiny="/SignUp" className="text-white font-quicksand no-underline font-bold items-center">
                             {t('hero.signup')}
                         </Button>
+
+                        
                     </div>
                 </div>
             </div>

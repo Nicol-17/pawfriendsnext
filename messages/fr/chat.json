@@ -1,0 +1,15 @@
+{
+    "placeholder": "Tapez un message...",
+    "send": "ENVOYER",
+    "botMessages": [
+        "Bonjour, comment allez-vous! 🐶",
+        "Quel animal avez-vous?",
+        "Quand avez-vous remarqué les premiers symptômes?🐾",
+        "Avez-vous fait des analyses de sang, des échographies ou des radiographies?",
+        "Des traitements naturels ou alternatifs ont-ils fonctionné?",
+        "Quels soins particuliers proposez-vous à domicile?",
+        "Comment gérez-vous l'anxiété ou la douleur de votre animal?",
+        "Recommandez-vous un vétérinaire? Comment s'est passée votre expérience?",
+        "Comment vous préparez-vous émotionnellement aux adieux?"
+    ]
+}

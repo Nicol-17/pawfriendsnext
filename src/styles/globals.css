@@ -2,9 +2,9 @@
 @import '../styles/layout.css';
 
 @import "tailwindcss";
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 
 
@@ -39,7 +39,7 @@
 
     --app-nav-height: 110px;
 
-    
+
 }
 
 
@@ -48,15 +48,19 @@
     .bg-neutral {
         background-color: var(--theme-color-neutral);
     }
+
     .bg-primary {
         background-color: var(--theme-color-primary);
     }
+
     .bg-contrast {
         background-color: var(--theme-color-contrast);
     }
+
     .bg-contrast-dark {
         background-color: var(--theme-color-contrast-dark);
     }
+
     .bg-contrast-light {
         background-color: var(--theme-color-contrast-light);
     }
@@ -69,19 +73,68 @@
     .text-chewy {
         font-family: var(--theme-font-chewy);
     }
+
     .text-quicksand {
         font-family: var(--theme-font-quicksand);
     }
-    
+
+    .main-wrapper {
+        width: min(calc(100% - 1rem), max(1024px));
+        margin-inline: auto;
+    }
+
+    .section-full {
+        min-height: 100dvh;
+    }
+
+    .section-haft {
+        min-height: 50dvh;
+    }
+
+    .section-middle {
+        min-height: 80dvh;
+    }
+
+    .header-top-spacing {
+        padding-block-start: calc(var(--app-nav-height) + 10px);
+        position: relative;
+    }
+
+    .full-column {
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+
+    }
+
+    .bg-separator {
+        background-image: url('/images/Hojas.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 100px;
+
+
+    }
+
+    .bg {
+        background-image: url('/images/bg1.jpg');
+        position: fixed;
+        background-size: cover;
+        filter: blur(5px);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+
+
+
+
+
 }
 
-.chewy {
-    font-family: var(--theme-font-chewy);
-}
 
-.quicksand {
-    font-family: var(--theme-font-quicksand);
-}
 
 html {
     scroll-behavior: smooth;

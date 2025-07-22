@@ -1,0 +1,18 @@
+{
+    
+    "title" : "SE CONNECTER",   
+    "fields" : {
+        "email" : {
+            "label" : "E-Mail",
+            "placeholder" : "Entrez votre adresse e-mail"
+        },
+        "password" : {
+            "label" : "mot de passe",
+            "placeholder" : "Entrez votre mot de passe"
+        }
+    },
+     "button" : "SE CONNECTER",
+    "forgotPassword" : "Vous n'avez pas encore de compte ?",
+    "signup" : "S'inscrire",
+    "buttonNav" : "Rentrer à la maison"
+}

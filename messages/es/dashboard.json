@@ -1,0 +1,40 @@
+{
+    "title" : "Perfil",
+    "buttonEdit" : "EDITAR PERFIL",
+    "buttonChat" : "CHARLAR",
+    "titleForm" : "AÑADIR UNA NUEVA MASCOTA",
+    "fields" : {
+        "name" : {
+            "label" : "Nombre del perro",
+            "placeholder" : "Introduce el nombre de tu perro"
+        },
+         "Age" : {
+            "label" : "Edad",
+            "placeholder" : "Introduce su edad"
+        },
+         "Species": {
+            "label": "Especies",
+            "options": {
+                "dog": "Perro",
+                "cat": "Gato",
+                "bird": "Pájaro",
+                "fish": "Pez"
+            }
+        },
+         "Gender": {
+            "label": "Género",
+            "options": {
+                "male": "Masculino",
+                "female": "Femenino"
+            }
+        },
+         "Condition" : {
+            "label" : "Enfermedad o condición actual",
+            "placeholder" : "Ingrese su condición"
+        }
+        
+    },
+    "buttonForm" : "Añadir mascota",
+    "buttonNavDashboard" : "Cerrar sesión"
+
+}

@@ -1,0 +1,64 @@
+{
+    "nav": {
+        "us": "NOUS",
+        "testimonials": "TÉMOIGNAGES",
+        "food": "NOURRITURE",
+        "contact": "CONTACT",
+        "login": "SE CONNECTER"
+    },
+    "hero": {
+        "titleLine1": "UNE COMMUNAUTÉ POUR",
+        "titleLine2": "PROPRIÉTAIRES",
+        "titleLine3": "CHIOTS MALADES",
+        "paragraph1": "UN CHIOT N'EST PAS SEUL,",
+        "paragraph2": "ET VOUS NON PLUS",
+        "signup": "S'INSCRIRE"
+    },
+    "us": {
+        "title": "À PROPOS DE NOUS",
+        "paragraph1": "Chez PawFriends, nous pensons que chaque chien mérite une communauté qui le soutient et que chaque personne a besoin d'un endroit pour partager l'amour de son ami à quatre pattes.",
+        "paragraph2": "Ce réseau social a été créé avec l'idée de connecter les propriétaires de chiens du monde entier afin qu'ils puissent partager des expériences, des conseils et des moments heureux et se soutenir mutuellement dans les moments difficiles."
+    },
+    "testimonials": {
+        "title": "TÉMOIGNAGES",
+        "comment1": "Cette application est incroyable !",
+        "comment2": "Cette application est incroyable !",
+        "comment3": "Cette application est incroyable !"
+    },
+    "food": {
+        "title": "NOURRITURE POUR ANIMAUX",
+        "RoyalCanin": {
+            "name": "Royal Canin Feline Hydrolysé 3,5 kg",
+            "price": 53.93,
+            "priceMessage" : "{{price, currency}}"
+        },
+        "Proplan": {
+            "name": "Proplan Aliment hypocalorique pour petites",
+            "price": 28.90,
+            "priceMessage" : "{{price, currency}}"
+        },  
+        "NutraNuggets": {
+            "name": "Nutra Nuggets Entretien pour chats",
+            "price": 33.39,
+            "priceMessage" : "{{price, currency}}"
+        }
+    },
+    "contact": {
+        "title": "CONTACTEZ-NOUS",
+        "button": "Envoyer un message",
+        "fields": {
+            "name": {
+                "label": "Nom",
+                "placeholder": "Entrez votre nom"
+            },
+            "email": {
+                "label": "E-Mail",
+                "placeholder": "Entrez votre adresse e-mail"
+            },
+            "message": {
+                "label": "message",
+                "placeholder": "Entrez votre message..."
+            }
+        }
+    }
+}

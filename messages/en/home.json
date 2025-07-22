@@ -1,0 +1,65 @@
+{
+    "nav": {
+        "us": "US",
+        "testimonials": "TESTIMONIALS",
+        "food": "FOOD",
+        "contact": "CONTACT",
+        "login": "LOG IN"
+    },
+    "hero": {
+        "titleLine1": "A COMMUNITY FOR",
+        "titleLine2": "HOMEOWNERS",
+        "titleLine3": "SICK PUPPIES",
+        "paragraph1": "A PUPPY IS NOT ALONE,",
+        "paragraph2": "AND NEITHER DO YOU",
+        "signup": "SIGN UP"
+    },
+    "us": {
+        "title": "ABOUT US",
+        "paragraph1": "At PawFriends, we believe that every dog ​​deserves a community that supports them and that every person needs a place to share the love of their furry friend.",
+        "paragraph2": "This social network was created with the idea of ​​connecting dog owners from all over the world so that they can share experiences, advice and happy moments and support each other in difficult times."
+    },
+    "testimonials": {
+        "title": "TESTIMONIALS",
+        "comment1": "This app is incredible!",
+        "comment2": "This app is incredible!",
+        "comment3": "This app is incredible!"
+    },
+    "food": {
+        "title": "PET FOOD",
+        "RoyalCanin": {
+            "name": "Royal Canin Feline Hydrolyzed 3.5 kg",
+            "price": 60.67,
+            "priceMessage" : "{{price, currency}}"
+        },
+        "Proplan": {
+            "name": "Proplan Low-calorie food for small breeds, 3 kg",
+            "price": 32.52,
+            "priceMessage" : "{{price, currency}}"
+        },
+        "NutraNuggets": {
+            "name": "Nutra Nuggets Maintenance for Cats",
+            "price": 37.57,
+            "priceMessage" : "{{price, currency}}"
+        }
+       
+    },
+    "contact": {
+        "title": "CONTACT US",
+        "button": "Send Message",
+        "fields": {
+            "name": {
+                "label": "Name",
+                "placeholder": "Enter your name"
+            },
+            "email": {
+                "label": "E-Mail",
+                "placeholder": "Enter your email address"
+            },
+            "message": {
+                "label": "message",
+                "placeholder": "Enter your message..."
+            }
+        }
+    }
+}

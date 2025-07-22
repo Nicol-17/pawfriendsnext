@@ -1,0 +1,15 @@
+{
+    "placeholder": "Type message...",
+    "send": "SEND",
+    "botMessages": [
+        "Hello, how are you! 🐶",
+        "What kind of animal do you have?",
+        "When did you first notice symptoms?🐾",
+        "Have you had blood tests, ultrasounds, or X-rays?",
+        "Have any natural or alternative treatments worked?",
+        "What special care do you provide at home?",
+        "How do you manage your pet's anxiety or pain?",
+        "Do you recommend a veterinarian? What was your experience like?",
+        "How do you prepare emotionally for saying goodbye?"
+    ]
+}

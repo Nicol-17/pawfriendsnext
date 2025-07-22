@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Quicksand, Chewy } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
+import { NextIntlClientProvider } from "next-intl";
 
 const quicksand = Quicksand({
   variable: "--theme-font-quicksand",
@@ -38,8 +39,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${quicksand.variable} ${geistMono.variable} ${chewy.variable} antialiased`}
-      >
+      ><NextIntlClientProvider>
         {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

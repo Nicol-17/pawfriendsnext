@@ -1,0 +1,17 @@
+{
+    "title" : "EINLOGGEN",   
+    "fields" : {
+        "email" : {
+            "label" : "E-Mail",
+            "placeholder" : "Geben Sie Ihre E-Mail-Adresse ein"
+        },
+        "password" : {
+            "label" : "Passwort",
+            "placeholder" : "Geben Sie Ihr Passwort ein"
+        }
+    },
+     "button" : "EINLOGGEN",
+    "forgotPassword" : "Sie haben noch kein Konto?",
+    "signup" : "Melden Sie sich an",
+    "buttonNav" : "Gehe zur Startseite"
+}

@@ -1,0 +1,15 @@
+{
+    "placeholder": "Nachricht eingeben...",
+    "send": "SCHICKEN",
+    "botMessages": [
+        "Hallo, wie geht es dir? 🐶",
+        "Was für ein Tier hast du?",
+        "Wann sind dir die ersten Symptome aufgefallen? 🐾",
+        "Haben Sie Blutuntersuchungen, Ultraschall oder Röntgenaufnahmen machen lassen?",
+        "Haben natürliche oder alternative Behandlungen geholfen?",
+        "Welche besondere Pflege leisten Sie zu Hause?",
+        "Wie gehen Sie mit der Angst oder den Schmerzen Ihres Haustieres um",
+        "Können Sie einen Tierarzt empfehlen? Wie waren Ihre Erfahrungen",
+        "Wie bereiten Sie sich emotional auf den Abschied vor?"
+    ]
+}

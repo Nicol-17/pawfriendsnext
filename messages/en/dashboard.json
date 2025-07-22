@@ -1,0 +1,40 @@
+{
+    "title" : "Profile",
+    "buttonEdit" : "EDIT PROFILE",
+    "buttonChat" : "CHAT",
+    "titleForm" : "ADD A NEW PET",
+    "fields" : {
+        "name" : {
+            "label" : "Dog Name",
+            "placeholder" : "Enter your Dog Name"
+        },
+         "Age" : {
+            "label" : "Age",
+            "placeholder" : "Enter your age"
+        },
+         "Species": {
+            "label": "Species",
+            "options": {
+                "dog": "dog",
+                "cat": "cat",
+                "bird": "bird",
+                "fish": "fish"
+            }
+        },
+         "Gender": {
+            "label": "Gender",
+            "options": {
+                "male": "Male",
+                "female": "Female"
+            }
+        },
+         "Condition" : {
+            "label" : "Current illness or condition",
+            "placeholder" : "Enter your Condition"
+        }
+        
+    },
+    "buttonForm" : "Add pet",
+    "buttonNavDashboard" : "log out"
+
+}

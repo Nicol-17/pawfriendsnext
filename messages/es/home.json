@@ -1,0 +1,64 @@
+{
+    "nav": {
+        "us": "NOSOTROS",
+        "testimonials": "TESTIMONIOS",
+        "food": "ALIMENTOS",
+        "contact": "CONTACTO",
+        "login": "INICIAR SESIÓN"
+    },
+    "hero": {
+        "titleLine1": "UNA COMUNIDAD PARA",
+        "titleLine2": "DUEÑOS DE HOGAR",
+        "titleLine3": " CACHORROS ENFERMOS",
+        "paragraph1": "UN CACHORRO NO ESTÁ SOLO,",
+        "paragraph2": "Y TÚ TAMPOCO",
+        "signup": "REGISTRARSE"
+    },
+    "us": {
+        "title": "SOBRE NOSOTROS",
+        "paragraph1": "En PawFriends, creemos que cada perro merece una comunidad que lo apoye y que cada persona necesita un lugar para compartir el amor por su amigo peludo.",
+        "paragraph2": "Esta red social fue creada con la idea de conectar a dueños de perros de todo el mundo para que puedan compartir experiencias, consejos y momentos felices, y apoyarse mutuamente en tiempos difíciles."
+    },
+    "testimonials": {
+        "title": "TESTIMONIOS",
+        "comment1": "¡Esta aplicación es increíble!",
+        "comment2": "¡Esta aplicación es increíble!",
+        "comment3": "¡Esta aplicación es increíble!"
+    },
+    "food": {
+        "title": "ALIMENTOS PARA MASCOTAS",
+        "RoyalCanin": {
+            "name": "Royal Canin Feline Hidrolizado 3,5 kg",
+            "price": 250.263,
+            "priceMessage" : "{{price, currency}}"
+        },
+        "Proplan": {
+            "name": "Proplan Alimento bajo en calorías para razas pequeñas, 3 kg",
+            "price": 134.119,
+            "priceMessage" : "{{price, currency}}"
+        },
+        "NutraNuggets": {
+            "name": "Nutra Nuggets Mantenimiento para Gatos",
+            "price": 154.975,
+            "priceMessage" : "{{price, currency}}"
+        }
+    },
+    "contact": {
+        "title": "CONTÁCTANOS",
+        "button": "Enviar Mensaje",
+        "fields": {
+            "name": {
+                "label": "Nombre",
+                "placeholder": "Ingresa tu nombre"
+            },
+            "email": {
+                "label": "Correo Electrónico",
+                "placeholder": "Ingresa tu correo electrónico"
+            },
+            "message": {
+                "label": "Mensaje",
+                "placeholder": "Ingresa tu mensaje..."
+            }
+        }
+    }
+}

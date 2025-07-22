@@ -1,39 +1,47 @@
-import { useState } from "react";
-import { MdLanguage } from "react-icons/md";
-import { useTranslation } from "react-i18next";
+'use client';
 
+import { useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
+import { MdLanguage } from "react-icons/md";
+import { useLocale } from "next-intl";
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
   const [showOptions, setShowOptions] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+  const currentLocale = useLocale();
 
   const toggleOptions = () => {
     setShowOptions(!showOptions);
   };
 
   const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
+    
+    const segments = pathname.split('/');
+    segments[1] = lang; 
+    const newPath = segments.join('/');
+    router.push(newPath);
     setShowOptions(false);
   };
 
   return (
-    <div className="language-container">
-      <button onClick={toggleOptions} className="button" >
+    <div className="relative inline-block ">
+      <button onClick={toggleOptions} className="text-black cursor-pointer border-none hover:bg-[#43bb6f] bg-transparent rounded-full p-2 hover:text-white">
         <MdLanguage size={24} />
       </button>
 
       {showOptions && (
-        <div className="select-container">
+        <div className="absolute top-4 right-0 border border-gray-300 rounded-md shadow-md z-10 text-black text-chewy  cursor-pointer "> 
           {[
             { code: "en", label: "English" },
             { code: "es", label: "Español" },
-            { code: "fr", label: "Frances" },
+            { code: "fr", label: "Français" },
             { code: "de", label: "Deutsch" },
           ].map((lang) => (
             <div
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
-              className="select-input"
+              className={`select-input ${currentLocale === lang.code ? 'font-bold' : ''}`}
             >
               {lang.label}
             </div>

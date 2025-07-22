@@ -1,0 +1,41 @@
+{
+    "title": "S'INSCRIRE",
+    "buttonNav": "Accéder à la connexion",
+    "buttonForm": "S'inscrire",
+    "fields": {
+        "name": {
+            "label": "Nom et prénom",
+            "placeholder": "Entrez votre nom complet"
+        },
+        "email": {
+            "label": "E-Mail",
+            "placeholder": "Entrez votre adresse e-mail"
+        },
+        "phone": {
+            "label": "Téléphone",
+            "placeholder": "Entrez votre numéro de téléphone"
+        },
+        "birthdate": {
+            "label": "date de naissance",
+            "placeholder": "Entrez votre date de naissance"
+        },
+        "country": {
+            "label": "Pays",
+            "options": {
+                "AR": "Argentine",
+                "FR": "France",
+                "CO": "Colombie",
+                "DE": "Allemagne"
+            }
+        },
+        "password": {
+            "label": "mot de passe",
+            "placeholder": "Entrez votre mot de passe"
+        }
+    },
+     "alert" : {
+        "title": "Utilisateur enregistré avec succès",
+        "button": "d'après",
+        "message": "Votre compte a été créé avec succès"
+    }
+}
