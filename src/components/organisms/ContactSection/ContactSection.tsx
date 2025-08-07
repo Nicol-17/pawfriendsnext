@@ -48,7 +48,7 @@ function ContactSection () {
                 <h2 className="text-chewy text-[2rem] mb-4">{t('contact.title')}</h2>
                 <hr className="w-4/5 h-auto my-4 mx-auto border border-black rounded-[5px] bg-black opacity-50"/>
                     <div className="mt-px-2">
-                        <BaseForm fields={fields} onSubmit={handleContactSubmit} buttonText={t('contact.button')} />
+                        <BaseForm fields={fields} onSubmit={handleContactSubmit} buttonText={t('contact.button')}  />
                     </div>
             </div>
         </section>

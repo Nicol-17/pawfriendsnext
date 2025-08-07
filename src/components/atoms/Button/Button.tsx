@@ -10,6 +10,7 @@ type ButtonProps = {
   type?: "button" | "submit" | "reset" | 'link';
   className?: string;
   destiny?: string;
+ 
 };
 
 const Button = ({
@@ -34,7 +35,7 @@ const Button = ({
     bg-primary
     text-white
     w-24
-    h-12
+    h-14
     text-quicksand     
     hover:bg-[#56739b]
   `;
@@ -48,10 +49,10 @@ const Button = ({
   } else {
     return (
       <button
-        type={type}
+        type={type as 'button' | 'submit' | 'reset'}
         onClick={onClick}
-        className={`${baseClasses} ${className}`}
-      >
+        className={`${baseClasses} ${className}`}>
+          
         {children}
       </button>
     );

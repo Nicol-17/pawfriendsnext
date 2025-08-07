@@ -8,12 +8,15 @@ import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/atoms/LanguageSwitcher/LanguageSwitcher";
 import Link from "next/link";
 import Image from 'next/image';
+import { useRouter } from "next/navigation";
+import { loginUser } from "@/Services/auth";
 import './style.css';
+import { setCookie } from "cookies-next";
 
 
 function Login() {
     const t = useTranslations("login");
-    // const router = useRouter();
+    const router = useRouter();
     const [errorMessage, setErrorMessage] = useState("");
 
     const fields: Field[] = [
@@ -31,16 +34,24 @@ function Login() {
         },
     ];
 
-    const handleLoginSubmit = async (FormData: Record<string, string>) => {
+    const handleLoginSubmit = async (formData: Record<string, string>) => {
         try {
-            // const data = await loginUser(FormData);
-            // console.log("Login successful:", data);
-            // router.push("/dashboard");
+            const data = await loginUser(formData); 
 
-        } catch (error: any) {
-            setErrorMessage(error.message);
-        };
-    }
+            
+            setCookie('authToken', data.session.access_token, {
+                path: '/',
+                
+            });
+
+            router.push('/Dashboard');
+        } catch (err: any) {
+            setErrorMessage(err.message); 
+        }
+    };
+
+
+  
 
     return (
         <>
@@ -57,11 +68,11 @@ function Login() {
                     <h3>{t('title')}</h3>
                     {errorMessage && <p className="error-message">{errorMessage}</p>}
 
-                    <BaseForm fields={fields} onSubmit={handleLoginSubmit} buttonText={t('button')} className="style-login" />
+                    <BaseForm fields={fields} onSubmit={handleLoginSubmit} buttonText={t('button')} className="style-login flex flex-col " />
 
                     <div className="login-footer">
                         <p>{t('forgotPassword')}
-                            <Link href="/SignUp" aria-label="Sign up for a new account" className="text-[#43bb6f] hover:text-[#2a7d4c] p-2">
+                            <Link href="/Signup" aria-label="Sign up for a new account" className="text-[#43bb6f] hover:text-[#2a7d4c] p-2">
                                 {t('signup')}
                             </Link>
                         </p>

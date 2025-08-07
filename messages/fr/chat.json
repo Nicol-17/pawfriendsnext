@@ -1,5 +1,6 @@
 {
     "placeholder": "Tapez un message...",
+    "buttonNav": "Retour",
     "send": "ENVOYER",
     "botMessages": [
         "Bonjour, comment allez-vous! 🐶",

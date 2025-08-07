@@ -1,6 +1,5 @@
 .base-form {
-    display: flex;
-    flex-direction: column;
+    display: row;
     gap: 1rem;
     padding: 2rem;
 }

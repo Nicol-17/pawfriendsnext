@@ -41,7 +41,7 @@
 
 @media (max-width: 768px) {
     .Dog {
-        display: flex;
+        display: none;
         width: 100%;
         align-items: center;
 
@@ -51,4 +51,6 @@
         align-items: center;
 
     }
+    
+   
 }

@@ -1,5 +1,6 @@
 {
     "placeholder": "Type message...",
+    "buttonNav": "Return",
     "send": "SEND",
     "botMessages": [
         "Hello, how are you! 🐶",

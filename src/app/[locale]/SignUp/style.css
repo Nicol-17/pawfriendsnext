@@ -1,11 +1,5 @@
-body {
-    height: 100%;
-    overflow-y: auto;
-}
 
-
-
-.Login-container {
+.Signup-container {
     position: relative;
     background-color: var(--theme-color-neutral);
     height: 100vh;
@@ -17,41 +11,50 @@ body {
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: auto;
-    
-
+    flex-direction: row;
 }
 
-
-
 .Form-container {
-    height: 520px;
-    width: 400px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    height: auto;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
     background-color: rgba(66, 40, 40, 0.13);
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(58, 46, 148, 0.6);
-    padding: 60px 35px;
-    z-index: 2;
-    position: relative;
     font-family: var(--theme-font-chewy);
-    min-height: 100vh; 
-    overflow-y: auto; 
-    
+    border-radius: 10px;
+    padding: 60px;
+    z-index: 2;
     
 }
 
-.Form-container h3 {
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 60px;
-
+.Form-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.style-login input,
-.style-login textarea {
+
+.Form-right {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-column: 1 / span 2;
+    
+}
+
+
+.style-signup input,
+.style-signup textarea {
     background-color: rgba(17, 17, 17, 0.432);
     color: #ffffff;
     border-radius: 3px;
@@ -59,23 +62,30 @@ body {
     margin-top: 8px;
     width: 100%;
     border: none;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
 }
 
-.style-login input::placeholder,
-.style-login textarea::placeholder {
+.style-signup input::placeholder,
+.style-signup textarea::placeholder {
     color: #ffffff;
     opacity: 0.5;
+    
 }
 
-.style-login label {
-    margin-top: 20px;
-    display: block;
+.style-signup label {
+    margin-top: 10px;
+    display: flex;
     flex-direction: column;
 }
 
 .login-icons {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .login-icons a {
@@ -95,11 +105,11 @@ body {
     margin-top: 15px;
 }
 
-.Link{
+.Link {
     padding-left: 7.5rem;
 }
 
-.error-message{
+.error-message {
     color: red;
     font-size: 14px;
     margin-top: 5px;

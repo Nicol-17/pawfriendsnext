@@ -18,14 +18,13 @@ function TestimonialCard ({name, comment, avatar, rating = 5, variant = "food"} 
     ))
     
     return(
-        <div className="testimonial-card ">
+        <div className="testimonial-card " >
             <Image
                 src={avatar}
                 alt={`photo of ${name}`}
                 width={96}
                 height={96}
                 className="testimonial-avatar "
-            
             />
 
             

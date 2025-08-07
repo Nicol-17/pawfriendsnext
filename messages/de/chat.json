@@ -1,5 +1,6 @@
 {
     "placeholder": "Nachricht eingeben...",
+    "buttonNav": "Zurückkehren",
     "send": "SCHICKEN",
     "botMessages": [
         "Hallo, wie geht es dir? 🐶",

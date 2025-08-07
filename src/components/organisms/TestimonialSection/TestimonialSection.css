@@ -1,12 +1,12 @@
 .Testimonial-container {
     display: grid;
     row-gap: 2rem;
-
+    
     h2 {
         text-align: center;
         font-family: var(--theme-font-chewy);
     }
-
+    
     .wrapper {
         display: flex;
         justify-content: space-evenly;

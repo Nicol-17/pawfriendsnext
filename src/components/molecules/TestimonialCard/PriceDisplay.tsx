@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useLocale } from 'next-intl';
-import { exchangeRates, localeToCurrency } from '@/utils/exchangeRates';
+import {localeToCurrency, exchangeRates} from '@/utils/currencyformat.constants';
 import { currencyFormat } from '@/utils/currencyformat';
 
 interface PriceDisplayProps {

@@ -7,7 +7,11 @@ import Button from "@/components/atoms/Button/Button";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/atoms/LanguageSwitcher/LanguageSwitcher";
 import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
+import { signup } from "@/Services/auth";
+import './style.css';
+
+
 import Swal from "sweetalert2";
 
 function SignUp() {
@@ -15,10 +19,9 @@ function SignUp() {
     const router = useRouter();
     const [errorMessage, setErrorMessage] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
-
     const fields: Field[] = [
         {
-            name: "FullName",
+            name: "fullname",
             label: t('fields.name.label'),
             type: "text",
             placeholder: t('fields.name.placeholder')
@@ -31,7 +34,7 @@ function SignUp() {
 
         },
         {
-            name: "Phone",
+            name: "phone",
             label: t('fields.phone.label'),
             type: "tel",
             placeholder: t('fields.phone.placeholder')
@@ -40,7 +43,8 @@ function SignUp() {
             name: "birthdate",
             label: t('fields.birthdate.label'),
             type: "date",
-            placeholder: t('fields.birthdate.placeholder')
+            placeholder: t('fields.birthdate.placeholder'),
+            
         },
 
         {
@@ -63,49 +67,53 @@ function SignUp() {
         },
     ];
 
-    //   const handleSignUpSubmit = async (FormData: Record<string, string>) => {
-    //     try {
-    //       const data = await signup(FormData);
-    //       setsuccessMessage(data.message || "user created successfully");
-    //       setErrorMessage("");
+    const handleSignUpSubmit = async (formData: Record<string, string>) => {
+        try {
+            const { message } = await signup(formData)
+            setSuccessMessage(message)
+            setErrorMessage("")
 
-    //       Swal.fire({
-    //         title: t("alert.title"),
-    //         text: t("alert.message"),
-    //         icon: "success",
-    //         confirmButtonText: t("alert.button") || "OK",
-    //         draggable: true
-    //       });
+            Swal.fire({
+                title: t("alert.title"),
+                text: t("alert.message"),
+                icon: "success",
+                confirmButtonText: t("alert.button") || "OK",
+            })
 
-    //       setTimeout(() => {
-    //         navigate("/login");
-    //       }, 2600);
+            setTimeout(() => {
+                router.push("/Login")
+            }, 2600)
 
-    //     } catch (error: any) {
-    //       setErrorMessage(error.message);
-    //     };
+        } catch (error: any) {
+            setErrorMessage(error.message)
+        }
+    }
 
     return (
         <>
             <NavItem>
                 <LanguageSwitcher />
-                <Button type="link" destiny="/Login" className="text-primary  text-quicksand font-bold items-center hover:bg-[#43bb6f] underline">
+                <Button type="link" destiny="/Login" className="text-white  text-quicksand  font-bold items-center hover:bg-[#43bb6f]">
                     {t('buttonNav')}
                 </Button>
             </NavItem>
-            <section className="Login-container">
+            <section className="Signup-container">
                 <div className="background">
                     <div className="shape"></div>
                     <div className="shape"></div>
                 </div>
 
                 <div className="Form-container">
-                    <h3>{t('title')}</h3>
+                    <div className="Form-left">
+                        <h3 className="text-primary text-4xl">{t('title')}</h3>
+                    </div>
+                    <div className="Form-right">
+                        {errorMessage && <p className="error-message">{errorMessage}</p>}
+                        {successMessage && <p className="success-message">{successMessage}</p>}
 
-                    {errorMessage && <p className="error-message">{errorMessage}</p>}
-                    {successMessage && <p className="success-message">{successMessage}</p>}
+                        <BaseForm fields={fields} onSubmit={handleSignUpSubmit} buttonText={t('buttonForm')} className="style-signup grid grid-cols-2 gap-4 w-full" />
+                    </div>
 
-                    {/* <BaseForm fields={fields} onSubmit={handleSignUpSubmit} buttonText={t('buttonForm')} className="style-login" /> */}
 
 
 
@@ -125,4 +133,6 @@ function SignUp() {
     );
 }
 
+
 export default SignUp;
+
