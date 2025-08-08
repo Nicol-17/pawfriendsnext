@@ -18,6 +18,7 @@ function FooderSection() {
           comment={<PriceDisplay amount={5}/>}
           avatar="/images/RoyalCanine.jpg"
           rating={4}
+          className='bg-primary '
 
         />
         <TestimonialCard
@@ -25,6 +26,7 @@ function FooderSection() {
           comment={<PriceDisplay amount={5}/>}
           avatar="/images/ProPlan.jpg"
           rating={3}
+          className='bg-primary '
 
         />
         <TestimonialCard
@@ -32,6 +34,7 @@ function FooderSection() {
           comment={<PriceDisplay amount={5}/>}
           avatar="/images/NutraNuggets.jpg"
           rating={4}
+          className='bg-primary '
 
         />
       </div>

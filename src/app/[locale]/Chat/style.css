@@ -1,17 +1,19 @@
-.buttons{
-    text-align: end;
-   
+.buttons {
+  text-align: end;
+
 }
 
 .chat-title {
-  flex: 0 1 45px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
   position: relative;
   z-index: 2;
   background: rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.884);
   text-transform: uppercase;
-  text-align: left;
-  padding: 0px 20px 10px 90px;
+  padding: 10px 20px;
 
   h1,
   h2 {
@@ -28,11 +30,14 @@
     letter-spacing: 1px;
   }
 
+  .title-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .avatar {
-    position: absolute;
-    z-index: 1;
-    top: 29px;
-    left: 9px;
+    position: static; 
     border-radius: 30px;
     width: 60px;
     height: 60px;
@@ -50,9 +55,11 @@
 
 
 .chat {
-  width: 100%;
+  width: 90%;
+  max-width: 800px;
   margin: 0 auto;
-  height: 630px;
+  min-height: 100vh;
+  max-height: 95vh;
   display: flex;
   flex-direction: column;
   border-radius: 12px;
@@ -63,20 +70,24 @@
   font-family: var(--theme-font-quicksand);
   position: relative;
   z-index: 2;
-  
+
 
 }
+
 .messages {
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .message {
   padding: 10px 15px;
   margin-bottom: 10px;
   border-radius: 20px;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .message.user {
@@ -95,18 +106,22 @@
   display: flex;
   padding: 10px;
   background: rgba(255, 255, 255, 0.2);
- 
+
 }
 
-input {
+.input-area input {
   flex: 1;
   padding: 0.5rem;
   border-radius: 10px;
   border: none;
-   color: black;
+  color: black;
+   &::placeholder {
+      font-size: 14px;
+   }
+
 }
 
-button {
+.input-area button {
   margin-left: 10px;
   border: none;
   background: #1234cc;
@@ -114,12 +129,31 @@ button {
   padding: 0.5rem 1rem;
   border-radius: 10px;
   cursor: pointer;
-  
+
 }
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
   .chat {
-    height: 900px;
+    height: 100vh;
     width: 100%;
+    max-height: none;
+    border-radius: 0;
+  }
+  .chat-title{
+    h1{
+      font-size: 18px;
+    }
+    h2{
+      font-size: 9px;
+    }
+  }
+  .messages{
+    padding: 0.5rem;
+  }
+  .message{
+    max-width: 90%;
+  }
+  .input-area{
+    padding: 5px;
   }
 }

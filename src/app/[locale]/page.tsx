@@ -20,6 +20,9 @@ const HomePage = () => {
   const  t  = useTranslations("home");
   return (
     <>
+
+      <section className="section  section-full hero-main-content ">
+        <HeroText />
       <NavItem>
         <LanguageSwitcher/>
 
@@ -49,9 +52,7 @@ const HomePage = () => {
           </Button>
         </li>
       </NavItem>
-
-      <section className="section header-top-spacing section-full hero-main-content ">
-        <HeroText />
+        
       </section>
 
       <div className="header-top-spacing">

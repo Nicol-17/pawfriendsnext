@@ -65,10 +65,6 @@ function Dashboard() {
 
             <NavItem>
                 <LanguageSwitcher />
-                {/* <Button type="link" destiny="/" className="no-underline font-bold flex-items-center  text-neutral text-quicksand ">
-                    {t('buttonNavDashboard')}
-                </Button> */}
-
                 <LogoutButton />
             </NavItem>
 

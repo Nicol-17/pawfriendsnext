@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { validateRequiredFields } from "@/components/Utils/validation"; 
+import { validateRequiredFields } from "@/components/Utils/validation";
 import Button from "@/components/atoms/Button/Button";
-import "@/components/organisms/BaseForm/BaseForm.css"; 
+import "@/components/organisms/BaseForm/BaseForm.css";
+
 
 export type Field = {
   name: string;
@@ -9,7 +10,10 @@ export type Field = {
   type: "text" | "email" | "password" | "textarea" | "select" | "tel" | "date";
   placeholder?: string;
   className?: string;
-  options?: { value: string; label: string }[]; 
+  options?: { value: string; label: string }[];
+  min?: string;
+  max?: string;
+ 
 };
 
 type BaseFormProps = {
@@ -58,6 +62,8 @@ const BaseForm = ({ fields, onSubmit, buttonText, className }: BaseFormProps) =>
               value={formData[field.name] || ""}
               onChange={handleChange}
               className={`form-input ${errors[field.name] ? "error" : ""}`}
+              aria-invalid={!!errors[field.name]}
+              aria-describedby={errors[field.name] ? `error-${field.name}` : undefined}
             />
           ) : field.type === "select" ? (
             <select
@@ -66,6 +72,9 @@ const BaseForm = ({ fields, onSubmit, buttonText, className }: BaseFormProps) =>
               value={formData[field.name] || ""}
               onChange={handleChange}
               className={`form-input ${errors[field.name] ? "error" : ""}`}
+              aria-invalid={!!errors[field.name]}
+              aria-describedby={errors[field.name] ? `error-${field.name}` : undefined}
+
             >
               <option value="">Select an option</option>
               {field.options?.map((option) => (
@@ -83,11 +92,18 @@ const BaseForm = ({ fields, onSubmit, buttonText, className }: BaseFormProps) =>
               value={formData[field.name] || ""}
               onChange={handleChange}
               className={`form-input ${errors[field.name] ? "error" : ""}`}
+              aria-invalid={!!errors[field.name]}
+              aria-describedby={errors[field.name] ? `error-${field.name}` : undefined}
+              min={field.min}
+              max={field.max}
+
             />
           )}
 
           {errors[field.name] && (
-            <span className="error-message">{errors[field.name]}</span>
+            <span id={`error-${field.name}`} className="error-message">
+              {errors[field.name]}
+            </span>
           )}
         </div>
       ))}
@@ -95,7 +111,7 @@ const BaseForm = ({ fields, onSubmit, buttonText, className }: BaseFormProps) =>
       <Button type="submit" className="submit-button ">
         {buttonText}
       </Button>
-      
+
     </form>
   );
 };

@@ -15,6 +15,7 @@ function TestimonialSection() {
                     comment={t('testimonials.comment1')}
                     avatar="/images/person.svg"
                     rating={1}
+                    className='testimonial-card-section'
 
                 />
 
@@ -23,6 +24,8 @@ function TestimonialSection() {
                     comment={t('testimonials.comment2')}
                     avatar="/images/person.svg"
                     rating={5}
+                    className='testimonial-card-section'
+
 
                 />
 
@@ -31,6 +34,7 @@ function TestimonialSection() {
                     comment={t('testimonials.comment3')}
                     avatar="/images/person.svg"
                     rating={4}
+                    className='testimonial-card-section'
 
                 />
 

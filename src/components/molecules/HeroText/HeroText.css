@@ -8,6 +8,10 @@
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     filter: drop-shadow(10px 10px 14px rgba(0, 0, 0, 0.55));
+    margin-left: 14%;
+    margin-top: 4.5%;
+    
+    
 }
 
 .full-column {
@@ -39,18 +43,27 @@
     margin-inline-start: 30ch;
 }
 
-@media (max-width: 768px) {
-    .Dog {
-        display: none;
-        width: 100%;
-        align-items: center;
 
+@media (max-width: 1220px) {
+    .Dog {
+        width: min(10%, 500px);
+    }
+}
+
+@media (max-width: 820px) {
+    .owners {
+        flex-direction: column;
     }
 
-    .hero-main-content {
-        align-items: center;
-
+    .text-primary {
+        margin-inline-end: 5vmin;
+        display: grid;
+        row-gap: .2ch;
     }
     
-   
+    .hero-button {
+        margin-inline-start: auto;
+    }
 }
+
+

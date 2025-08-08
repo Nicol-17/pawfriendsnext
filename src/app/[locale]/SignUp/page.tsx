@@ -19,6 +19,12 @@ function SignUp() {
     const router = useRouter();
     const [errorMessage, setErrorMessage] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
+
+    const today = new Date().toISOString().split('T')[0]; 
+    const minDate = new Date();
+    minDate.setFullYear(minDate.getFullYear() - 100); 
+    const minDateFormatted = minDate.toISOString().split('T')[0];
+
     const fields: Field[] = [
         {
             name: "fullname",
@@ -44,6 +50,8 @@ function SignUp() {
             label: t('fields.birthdate.label'),
             type: "date",
             placeholder: t('fields.birthdate.placeholder'),
+            min: minDateFormatted,
+            max: today
             
         },
 

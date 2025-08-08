@@ -10,35 +10,30 @@ function HeroText() {
     const  t  = useTranslations("home");
 
     return (
-        <section className="hero-section">
+        <>        
+        <section className="hero-sectionH">
 
             <Image
                 src="/images/Rama-secondary.png"
                 width={500}
                 height={500}
-                className="absolute bottom-0 -right-2.5 z-[1] w-[140px] scale-x-[-1]"
+                className="absolute bottom-0 -right-2.5 z-[1] w-[140px] scale-x-[-1] z-20"
                 alt="Rama secondary"
             />
-            <Image
-                src="/images/Rama.png"
-                width={500}
-                height={500}
-                className="absolute top-0 right-0 w-[150px] z-[0] h-[auto]"
-                alt="Rama primary"
-            />
+            
 
             <div className="hero-main-content">
                 <Image
-                    src="/images/modelDogs.png"
-                    width={530}
-                    height={550}
+                    src="/images/Dog.png"
+                    width={380}
+                    height={650}
                     className="Dog"
                     alt="Dog"
                 />
 
 
 
-                <div className="main-wrapper full-column">
+                <div className="main-wrapper full-column ">
                     <div className="text-primary "> 
                         <h1 className="grid text-left text-[2.5rem] text-principle text-chewy  ">
                             <span>{t('hero.titleLine1')}</span>
@@ -54,7 +49,7 @@ function HeroText() {
 
                         <p className="paragraph-secondary"> {t('hero.paragraph2')}</p>
 
-                        <Button type="link" destiny="/Signup" className="text-white font-quicksand no-underline font-bold items-center">
+                        <Button type="link" destiny="/Signup" className="text-white font-quicksand no-underline font-bold items-center hero-button">
                             {t('hero.signup')}
                         </Button>
 
@@ -63,6 +58,9 @@ function HeroText() {
                 </div>
             </div>
         </section>
+        
+        
+        </>
     );
 }
 export default HeroText;

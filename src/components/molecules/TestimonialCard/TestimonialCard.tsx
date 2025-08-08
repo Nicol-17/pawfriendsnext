@@ -7,10 +7,11 @@ type TestimonialCardProps = {
     avatar: string ;
     rating?: number;
     variant?: "food" | "testimonial";
+    className?: string;
     
 };
 
-function TestimonialCard ({name, comment, avatar, rating = 5, variant = "food"} :TestimonialCardProps){
+function TestimonialCard ({name, comment, avatar, rating = 5, variant = "food" , className} :TestimonialCardProps){
     const stars = Array.from({length: 5}, (_, i) => (
         <span key={i} className={i < rating ? "star filled" : "star"}>
             ★
@@ -18,7 +19,7 @@ function TestimonialCard ({name, comment, avatar, rating = 5, variant = "food"} 
     ))
     
     return(
-        <div className="testimonial-card " >
+        <div className={`testimonial-card ${className}`} >
             <Image
                 src={avatar}
                 alt={`photo of ${name}`}

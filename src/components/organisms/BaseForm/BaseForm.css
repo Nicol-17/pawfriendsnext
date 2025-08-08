@@ -64,7 +64,7 @@ textarea:focus {
 .submit-button {
     margin-top: 1rem;
     align-self: center;
-    margin-left: 0.1rem;
+    margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -75,6 +75,9 @@ textarea:focus {
     input,
     textarea {
         width: 100%;
+    }
+    .submit-button{
+        margin-left: 1rem;
     }
 }
 
